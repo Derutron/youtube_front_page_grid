@@ -1,0 +1,213 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+  background-color: rgb(0, 0, 0);
+  width: 1340px;
+  height: 1000px;
+  margin: auto; 
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Divide the main div into two columns */ 
+}
+
+/* Left half side of the page */
+.left_side{
+  color: rgb(255, 255, 255);
+  font-family: "calibri";
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 20px;  
+  display: grid;
+  grid-template-rows:1 1fr; /* Divide the left side into three rows */
+  height: 750px;
+}
+  
+.logo img{
+  margin-top: 20px;
+  width: 200px;
+}
+
+hr{
+  width: 200px;
+  border: none;
+  border-top: 2px solid red;
+  margin-left: 30px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  margin-left: 30px;
+}
+
+
+.icon {
+  width:40px;
+  margin-left: 10px; 
+}
+
+
+.left_side p {
+    padding: 5px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255); 
+  }
+
+
+  .item:hover {
+    background-color: red; /* Red background on hover */
+    color: white; /* White text color on hover */
+    border-radius: 50px;
+    padding:  5px;
+    width: 220px;
+    height: 40px;
+  }
+
+    
+/* Right half Side of the page */
+.right_side {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Divide the right_side div into three rows */
+  grid-gap: 20px;
+  padding: 10px 30px; 
+}
+
+/* Top div */
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Divide the top div into two equal columns */
+  grid-gap: 10px; /* Add some gap between the form and nav */
+  height: 60px;
+}
+
+.search {
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 10px;
+  width: 300px;
+  
+}
+    
+  .search input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px; 
+    outline: none;
+    font-size: 16px;
+    
+  }
+  
+  .search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  
+
+/* Nav bar */
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* Divide the nav div into four equal columns */
+}
+
+
+.nav {
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.nav span {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.nav .icon {
+  font-size: 20px;
+}
+
+.nav span:nth-child(2) {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/* Add white background to each icon span */
+.nav .icon:nth-child(1),
+.nav .icon:nth-child(3),
+.nav .icon:nth-child(4) {
+  background-color: white;
+  padding: 8px 0px 8px 20px;
+  border-radius: 20px;
+  width: 50px;
+}
+
+
+
+.middle img{
+  height: 300px;
+  width: 980px;
+  border-radius: 20px;
+   
+}
+
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  color: #f2f2f2;
+}
+
+/* Bottom Div */
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Divide the bottom div into four equal columns */
+  grid-gap: 20px; /* Add some gap between the items */
+}
+
+  
+.bottom img {
+  max-width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+.bottom p{
+  height: 200px;
+  background-color: white;
+  font-family: "calibri";
+  font-size: large;
+  font-weight: bold;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #333;
+}
+
+footer p {
+  margin-right: 10px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+footer::before {
+  content: '\00A9';
+  font-size: 14px;
+}
+
+  
